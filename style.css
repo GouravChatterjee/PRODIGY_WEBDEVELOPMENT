@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+    box-sizing : border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width : 100%;
+    min-height: 100vh;
+}
+
+#top{
+    width : 100%;
+    min-height: 50vh;
+    background-image: url(https://media.istockphoto.com/id/1320972310/photo/portrait-of-young-man-looking-away-against-black-background.jpg?s=1024x1024&w=is&k=20&c=eRxmwGpZVlYUDmct4_ncKBF1iQAZiP1Ifpx8A1O6fqs=);
+    background-size: cover;
+    background-position: inherit;
+}
+
+#overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    /* background-color: rgba(162, 158, 158, 0.954); */
+}
+
+#text{
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    bottom: 20%;
+    width :100%;
+    padding: 0 10vw;  /* vw :------->>viewport width*/
+   color: #fff;
+
+}
+
+#textright{
+    display: flex;
+    font-size: 10px;
+    width: 50%;
+    justify-content: space-between;
+}
+
+#text h1{
+    font-weight: 500;
+    font-size: 6vw; /* vw :------->>viewport width*/
+}
+
+#textright{
+    align-items: center;
+}
+
+#bottom{
+    display: flex;
+    width : 100%;
+    min-height: 50vh;
+    background-color: blue;
+}
+
+#bone{
+    padding: 30px;
+    width: 25%;
+    min-height:inherit;
+    background-color: white;
+}
+
+#bone p{
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+#btwo{
+    width: 25%;
+    min-height:inherit;
+    background-image:url(https://images.pexels.com/photos/17185984/pexels-photo-17185984/free-photo-of-young-man-in-a-hoodie-sitting-on-the-grass-with-eyes-closed-and-listening-to-music.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) ;
+    background-size:cover;
+    background-position:center;
+}
+
+
+#bthree{
+    width: 20%;
+    min-height:inherit;
+    
+}
+
+#bthreetop{
+    width: 100%;
+   min-height: 20vh;
+    padding: 20px;
+    background-color: orangered;
+    color: #fff ;
+}
+
+#bthreetop p{
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+#bthreebottom{
+    width: 100%;
+    min-height: 30vh;
+    background-image: url(https://images.pexels.com/photos/19685684/pexels-photo-19685684/free-photo-of-an-abstract-painting-with-colorful-flames.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+#bfour{
+    width: 30%;
+    padding: 30px;
+    min-height:inherit;
+    background-color:#444;
+    color: white;
+    
+}
+
+.notf{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.notf #photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+     background-image: url(https://images.pexels.com/photos/27856326/pexels-photo-27856326/free-photo-of-handsome-boy.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+    background-position: center;
+}
+
+.notf p{
+    width:75%;
+   font-size: 12px;
+}
+
+@media (max-width: 500px) {
+    #overlay #text{
+
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    #bottom{
+        min-height: 20vh;
+    }
+
+    #overlay #text #textright{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #overlay #text #textright p{
+        width: initial;
+        margin-top: 20px;
+    }
+    #overlay #text #textright #icons{
+        
+        margin-top: 30px;
+
+    }
+
+    #text h1{
+        font-size: 10vw;
+    }
+
+    #bottom{
+        flex-direction: column;
+    }
+
+    #bone{
+        width: 100%;
+    }
+
+    #btwo{
+        width: 100%;
+        min-height: 40vh;
+    }
+
+    #bthree{
+        width: 100%;
+    }
+
+    #bthreebottom{
+        min-width:40vh;
+    }
+
+    #bfour{
+        width: 100%;
+    }
+
+}
